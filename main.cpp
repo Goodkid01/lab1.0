@@ -1,4 +1,4 @@
-#include <iostream>
+
 //Переменная- именованный участок в оперативной памяти 
 //Типы данных:
 //1)	Целочисленные:
@@ -19,12 +19,68 @@
 //Встроенные функции
 //Pow, sqrt, sin , cos, tan, atan
 
+#include <iostream>
+#include <climits>
+#include <cfloat>
+using namespace std;
 
-int main()
-{
-    int a=666;
-    int b=4;
-    int c=a+b;
-	std::cout <<c<< std::endl;
-     
+int main() {
+  
+    std::cout << "char" << " " << sizeof(char) <<" "<< CHAR_MIN <<" "<< CHAR_MAX << std::endl;
+    
+    
+    std::cout << "short" << " "<<  sizeof(short) << " " << SHRT_MIN << " " << SHRT_MAX << std::endl;
+    
+    
+    std::cout << "int" << " "  << sizeof(int) << " " << INT_MIN << "  " << INT_MAX << std::endl;
+  
+    
+    std::cout << "long long" << " "  << sizeof(long long) << " " << LLONG_MIN << " " << LLONG_MAX << std::endl;
+    
+    
+    std::cout << "float"  << " " << sizeof(float) << " " << FLT_MIN << " " << FLT_MAX << std::endl;
+    
+    
+    std::cout << "double" << " "  << sizeof(double) << " " << DBL_MIN << " " << DBL_MAX << std::endl;
+    
+    
+    std::cout << "bool"<< " "  << sizeof(bool) << std::endl;
+
+    char a=81;
+    char b=12;
+    char c=a+b;
+    std::cout <<c<< std::endl;
+
+    short a1=81;
+    short c1=a1 * 2;
+    std::cout <<c1<< std::endl;
+
+
+    int a2=9000;
+    int b2=8000;
+    int c2=a2+b2;
+    std::cout <<c2<< std::endl;
+
+
+    float a3=9.7;
+    float b3=8.6;
+    float c3=a3+b3;
+    std::cout <<c3<< std::endl;
+
+
+    long long a4=90000000000000;
+    long long b4=a4*2;
+    std::cout <<b4<< std::endl;
+
+
+    double a5=2.76767;
+    double b5=a5*2.0;
+    std::cout <<b5<< std::endl;
+    
+
+
+
+
+
+
 }
